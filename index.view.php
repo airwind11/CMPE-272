@@ -66,7 +66,7 @@
 
     <div id="main">
         <div class="header">
-            <h1><=$course;?></h1>
+            <h1><?= $course;?></h1>
             <h2>A subtitle for your page goes here</h2>
         </div>
 
