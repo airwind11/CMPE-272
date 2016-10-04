@@ -39,7 +39,7 @@
 
 
 
-
+<h6><=$course;?></h6>
 <div id="layout">
     <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
