@@ -59,7 +59,7 @@
                 <li class="pure-menu-item"><a href="AboutUs.html" class="pure-menu-link">About</a></li>
 
                <li class="pure-menu-item"><a href="products.html" class="pure-menu-link">Products</a></li>
-               <li class="pure-menu-item"><a href="http://www.independent.co.uk/extras/indybest/food-drink/the-50-best-food-websites-8665600.html" class="pure-menu-link">News</a></li>
+               <li class="pure-menu-item"><a href="http://www.independent.co.uk/extras/indybest/food-drink/the-50-best-food-websites-8665600.html" class="pure-menu-link"  target="_blank">News</a></li>
 
                 <li class="pure-menu-item"><a href="contacts.php" class="pure-menu-link">Contacts</a></li>
             </ul>
