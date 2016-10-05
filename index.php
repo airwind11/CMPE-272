@@ -1,5 +1,6 @@
 <?php
 
-$course = "CMPE-272";
 
+$course = "MEAL-DESTINATION";
 require 'index.view.php';
+
