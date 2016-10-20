@@ -1,6 +1,7 @@
 
         <?php
           extract($_POST);
+
          // check if user has left USERNAME or PASSWORD field blank
            if ( !$adminid || !$password ) {
                fieldsBlank();
@@ -68,13 +69,29 @@
            // has been granted
            function accessGranted( $name )
           {
-              print( "<title>Thank You</title></head>
+              echo( "<title>Thank You </title></head>
                 <body style = \"font-family: arial;
                 font-size: 1em; color: blue\">
+
                 <strong>Permission has been
-                granted, $name. <br />
-                 This is Secure Area.</strong>" );
+                granted, $name.
+                 This is Secure Area.<br />
+                  </strong><br />
+
+                 ");
+
+                echo"<h1>User Details</h1><br />";
+                $handle = fopen("User-Details.txt", "r");
+                while (($line = fgets($handle)) !== false) {
+                    echo "$line<br>";
+                }
+                fclose($handle);
+
+
+
+
            }
+
             // print a message indicating password is invalid
           function wrongPassword()
            {
