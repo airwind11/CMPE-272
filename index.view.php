@@ -67,6 +67,7 @@
                <li class="pure-menu-item"><a href="http://www.independent.co.uk/extras/indybest/food-drink/the-50-best-food-websites-8665600.html" class="pure-menu-link"  target="_blank">News</a></li>
 
                 <li class="pure-menu-item"><a href="contacts.php" class="pure-menu-link">Contacts</a></li>
+                <li class="pure-menu-item"><a href="user.html" class="pure-menu-link">User Registration</a></li>
             </ul>
         </div>
     </div>
