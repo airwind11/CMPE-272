@@ -35,7 +35,7 @@ if(isset($_COOKIE['cookie']))
   else
  $count = 1;
 
-echo $last;
+
 }
 else
 {

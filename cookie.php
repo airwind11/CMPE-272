@@ -4,7 +4,7 @@ $myArray = explode(',', $_COOKIE["last_visited"]);
 
 echo "<br><br>LAST FIVE VISITED PRODUCTS ARE :<br>";
 $num = 0;
-print_r($myArray);
+
 foreach ($myArray as $name ) {
     $num = $num+1;
     if($num<6)
