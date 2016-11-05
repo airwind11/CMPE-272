@@ -30,6 +30,7 @@ $stmt->execute();
 
 
 
+
     /* insert a row
     $firstname = "John";
     $lastname = "Doe";
