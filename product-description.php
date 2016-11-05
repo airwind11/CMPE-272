@@ -45,11 +45,13 @@ else
 
 
     // print_r($_SERVER);
+$d = $_SERVER['HTTP_HOST'];
+setcookie("last_visited","$last",time()+3600, "/",$d, 0);
+setcookie("cookie[$value]","$count",time()+3600, "/",$d, 0);
 
+    //setcookie("last_visited","$last",time()+3600, "/","$_SERVER['HTTP_HOST']", 0);
 
-    setcookie("last_visited","$last",time()+3600, "/","$_SERVER['HTTP_HOST']", 0);
-
-     setcookie("cookie[$value]","$count",time()+3600, "/","$_SERVER['HTTP_HOST']", 0);
+     //setcookie("cookie[$value]","$count",time()+3600, "/","$_SERVER['HTTP_HOST']", 0);
 
 
 
