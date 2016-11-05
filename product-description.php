@@ -47,9 +47,9 @@ else
     // print_r($_SERVER);
 
 
-    setcookie("last_visited","$last",time()+3600, "/","localhost", 0);
+    setcookie("last_visited","$last",time()+3600, "/","$_SERVER['HTTP_HOST']", 0);
 
-     setcookie("cookie[$value]","$count",time()+3600, "/","localhost", 0);
+     setcookie("cookie[$value]","$count",time()+3600, "/","$_SERVER['HTTP_HOST']", 0);
 
 
 
