@@ -93,7 +93,7 @@ else  if ($_POST['action'] == 'Search')
     //$result = $stmt->fetchAll();
     //Print_r($result);
 echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>Firstname</th><th>Lastname</th><th>Email</th><th>Home Address</th><th>Home Phone</th><th>Mobile Phone</th></tr>";
+echo "<tr><th>Firstname</th><th>Lastname</th><th>Home Address</th><th>Email</th><th>Home Phone</th><th>Mobile Phone</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator {
     function __construct($it) {
