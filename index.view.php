@@ -68,6 +68,8 @@
 
                 <li class="pure-menu-item"><a href="contacts.php" class="pure-menu-link">Contacts</a></li>
                 <li class="pure-menu-item"><a href="user.html" class="pure-menu-link">User Registration</a></li>
+                <li class="pure-menu-item"><a href="alluserlist.php" class="pure-menu-link">User List</a></li>
+
             </ul>
         </div>
     </div>
