@@ -54,6 +54,7 @@ echo("<h1>Airwind.me-Users</h1>");
         echo $v;
 
     }
+    echo "</table>";
 echo("<br>");
     }
 
@@ -83,5 +84,9 @@ echo "<tr><th>Firstname</th><th>Lastname</th><th>Home Address</th><th>Email</th>
 //$obj->setFetchMode(PDO::FETCH_ASSOC);
 foreach(new TableRows(new RecursiveArrayIterator ( $obj)) as $k=>$v ) {
         echo $v;
+
 }
+
+  echo "</table>";
+        echo("<br>");
 ?>
