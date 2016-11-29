@@ -84,7 +84,7 @@ $result = array_map(function($result) {
     );
 }, $result);
 
-echo json_encode($result);
+echo json_encode($result[0]);
 
 
 
