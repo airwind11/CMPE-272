@@ -28,7 +28,7 @@ $ch = curl_init($site_url);
 curl_setopt_array($ch, $options);
 
 $content  = curl_exec($ch);
-die($content);
+//die($content);
 curl_close($ch);
 
 
