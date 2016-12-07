@@ -7,6 +7,30 @@ $password = "Welcome01@";
 //$password = "";
 $dbname = "aravinda";
 
+$id = $_POST['action'];
+
+$site_url = "https://merkato.herokuapp.com/sellers/1/products/$id/track";
+
+$options = array(
+    CURLOPT_RETURNTRANSFER => true,
+    // return web page
+    CURLOPT_HEADER         => false,// don't return headers
+    CURLOPT_POST           => 1,
+    CURLOPT_FOLLOWLOCATION => true,   // follow redirects
+    CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
+    CURLOPT_ENCODING       => "",     // handle compressed
+    CURLOPT_USERAGENT      => "test", // name of client
+    CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
+    CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
+    CURLOPT_TIMEOUT        => 120,    // time-out on response
+);
+$ch = curl_init($site_url);
+curl_setopt_array($ch, $options);
+
+$content  = curl_exec($ch);
+die($content);
+curl_close($ch);
+
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -17,6 +41,7 @@ try {
     and product_id= :value" );
 
     $stmt->bindParam(':value', $_POST['action']);
+
 
        $stmt->execute();
  $stmt->setFetchMode(PDO::FETCH_ASSOC);
