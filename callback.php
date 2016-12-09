@@ -6,9 +6,9 @@ if (isset($_GET['code']))
     $url = 'https://merkato.herokuapp.com/oauth/token';
     $fields = array(
                 'grant_type' => 'authorization_code',
-                'client_id' => 7,
-                'client_secret' => "sO8RXQA7bKzjFZAXhcKdFE7qZz5d5R0fGsvJzNSw",
-                'redirect_uri' => "http://localhost/callback.php",
+                'client_id' => 6,
+                'client_secret' => "lHtUtcsfIU95x76aZajpf6MmfO392c616n0GeTz8",
+                'redirect_uri' => "http://airwind.me/callback.php",
                 'code' => urlencode($code),
     );
 
