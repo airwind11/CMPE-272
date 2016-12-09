@@ -47,8 +47,28 @@ if (isset($_GET['code']))
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result_json = curl_exec($ch);
         curl_close($ch);
+            $ch = (array) $ch;
 
-        echo("$result_json");
+
+              echo( "<title>Thank You </title></head>
+                <body style = \"font-family: arial;
+                font-size: 1em; color: blue\">
+
+                <strong>Permission has been
+                granted, $ch[name].
+                 This is Secure Area.<br />
+                  </strong><br />
+
+                 ");
+
+                echo"<h1>User Details</h1><br />";
+                $handle = fopen("User-Details.txt", "r");
+                while (($line = fgets($handle)) !== false) {
+                    echo "$line<br>";
+                }
+                fclose($handle);
+
+
     } else {
         echo("$result_json");
     }
