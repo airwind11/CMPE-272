@@ -32,7 +32,7 @@ if (isset($_GET['code']))
     curl_close($ch);
 
     $result = json_decode($result_json, true);
-    print_r($result);
+
     if (isset($result['access_token'])) {
         $accessToken = $result['access_token'];
         $url = 'https://merkato.herokuapp.com/api/user';
@@ -47,8 +47,8 @@ if (isset($_GET['code']))
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result_json = curl_exec($ch);
         curl_close($ch);
-            $ch = (array) $ch;
-
+            $arraych = (array) $ch;
+                print_r($arraych);
 
               echo( "<title>Thank You </title></head>
                 <body style = \"font-family: arial;
