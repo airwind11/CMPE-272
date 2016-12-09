@@ -48,8 +48,8 @@ if (isset($_GET['code']))
         $result_json = curl_exec($ch);
         curl_close($ch);
 
-           // $arrayresult= (array) json_decode($result_json);
-             //   print_r($arrayresult);
+            $arrayresult =  json_decode($result_json, true);
+               print_r($arrayresult);
 
               echo( "<title>Thank You </title></head>
                 <body style = \"font-family: arial;
