@@ -48,6 +48,8 @@
 
 
 
+
+
 <div id="layout">
     <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
@@ -96,6 +98,8 @@
                 <div class="pure-u-1-4">
                     <img class="pure-img-responsive" src="https://i.ytimg.com/vi/M_md8ZAzmiM/maxresdefault.jpg" alt="Mountain">
                 </div>
+                <br/>
+                <a href="redirect.php" ><h1>Login  With Merkato</h1></a>
             </div>
 
 
