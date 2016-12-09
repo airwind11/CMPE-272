@@ -48,15 +48,15 @@ if (isset($_GET['code']))
         $result_json = curl_exec($ch);
         curl_close($ch);
 
-            $arrayresult= (array) json_decode($result_json);
-                print_r($arrayresult);
+           // $arrayresult= (array) json_decode($result_json);
+             //   print_r($arrayresult);
 
               echo( "<title>Thank You </title></head>
                 <body style = \"font-family: arial;
                 font-size: 1em; color: blue\">
 
                 <strong>Permission has been
-                granted, $arrayresult['name'].
+                granted, .
                  This is Secure Area.<br />
                   </strong><br />
 
